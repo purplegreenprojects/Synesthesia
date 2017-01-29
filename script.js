@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-	//make dynamic
-	var sentence = ("abcdcdcdabc");
+	var sentence = ("a cab");
 	var eachLetter = sentence.split("");
 
 	//eachLetter = ["a", "b", "c", "d"]
@@ -12,6 +11,26 @@ $(document).ready(function() {
 	var letterNumber = i++;
 
 	$("#text").empty()
+		.append("<div class='" + eachLetter[letterNumber] + "'>" + eachLetter[letterNumber] + "</div>")
+		.append("<div class='" + eachLetter[1] + "'>" + eachLetter[1] + "</div>")
+		.append("<div class='" + eachLetter[2] + "'>" + eachLetter[2] + "</div>")
+		.append("<div class='" + eachLetter[3] + "'>" + eachLetter[3] + "</div>")
+		.append("<div class='" + eachLetter[4] + "'>" + eachLetter[4] + "</div>");
+
+});
+
+
+//https://learn.jquery.com/using-jquery-core/iterating/
+//https://api.jquery.com/each/
+
+	// $(sentence).each(function(i))
+
+
+
+
+// Problem: not separate divs, so probably can't actually have different classes
+
+	// $("#text").empty()
 		// .append(eachLetter[0])
 		// .append(eachLetter[1])
 		// .append(eachLetter[2])
@@ -24,18 +43,14 @@ $(document).ready(function() {
 		// .append(eachLetter[9])
 		// .append(eachLetter[10]);
 
-		.append(eachLetter[letterNumber])
-		.append(eachLetter[letterNumber+1]);
+		// .append(eachLetter[letterNumber])
+		// .append(eachLetter[letterNumber+1]);
 
-});
+	// $(eachLetter).each(addClass(eachLetter[letterNumber]))
+	
+	// $("p").addClass(function(n){
+ //    	return "par_" + n;
 
-
-// $("#text").empty()
-	// 	.append("<div class='" + eachLetter[0] + "'>" + eachLetter[0] + "</div>")
-	// 	.append("<div class='" + eachLetter[1] + "'>" + eachLetter[1] + "</div>")
-	// 	.append("<div class='" + eachLetter[2] + "'>" + eachLetter[2] + "</div>")
-	// 	.append("<div class='" + eachLetter[3] + "'>" + eachLetter[3] + "</div>");
-
-
-
-// $(sentence).each(function(i))
+    // $("eachLetter").addClass(function(letterNumber){
+    // 	return letterNumber +1;
+    // });

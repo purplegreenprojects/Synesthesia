@@ -8,27 +8,33 @@ body {
 /*	height: 100px;
 	width: 100px;*/
 	background-color:gray;
+	display:inline-block;
+	float:left;
 }
 
 
 .a:hover {
 	color:lightblue;
 	display:inline-block;
+	float:left;
 }
 
 .b:hover {
 	color: blue;
 	display:inline-block;
+	float:left;
 }
 
 .c:hover {
 	color: yellow;
 	display:inline-block;
+	float:left;
 }
 
 .d:hover {
 	color: red;
 	display:inline-block;
+	float:left;
 }
 
 /*.abcd {
