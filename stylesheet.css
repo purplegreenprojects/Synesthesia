@@ -14,26 +14,22 @@ body {
 .a:hover {
 	color:lightblue;
 	display:inline-block;
-/*	background-color: blue;
-*/}
+}
 
 .b:hover {
 	color: blue;
 	display:inline-block;
-/*	background-color: yellow;
-*/}
+}
 
 .c:hover {
 	color: yellow;
 	display:inline-block;
-/*	background-color: red;
-*/}
+}
 
 .d:hover {
 	color: red;
 	display:inline-block;
-/*	background-color: black;
-*/}
+}
 
 /*.abcd {
 	color:orange;
