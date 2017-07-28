@@ -134,6 +134,10 @@
 	#hoverText ._8:hover { color: #141CB6; }
 	#hoverText ._9:hover { color: #CA643B; }
 
+	#hoverText {
+		font-weight: bold;
+	}
+
 /* SWOOSH */
 
 	#hoverText ._a.swoosh { color: #71BDE3; }
