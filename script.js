@@ -1,56 +1,24 @@
 $(document).ready(function() {
 
-	var sentence = ("a cab");
-	var eachLetter = sentence.split("");
+//function (instructions)
+	function printText() {
+		var text = $("#enterText").val()
+		var letterList = text.split("");
 
-	//eachLetter = ["a", "b", "c", "d"]
-		console.log(eachLetter);
-		console.log(eachLetter[2]);
+		var output = "";
 
-	var i = 0;
-	var letterNumber = i++;
+		for (letter of letterList) {
+			output = output + "<span class='allLetters _" + letter.toLowerCase() + "'>" + letter + "</span>";
+		}
 
-	$("#text").empty()
-		.append("<div class='" + eachLetter[letterNumber] + "'>" + eachLetter[letterNumber] + "</div>")
-		.append("<div class='" + eachLetter[1] + "'>" + eachLetter[1] + "</div>")
-		.append("<div class='" + eachLetter[2] + "'>" + eachLetter[2] + "</div>")
-		.append("<div class='" + eachLetter[3] + "'>" + eachLetter[3] + "</div>")
-		.append("<div class='" + eachLetter[4] + "'>" + eachLetter[4] + "</div>");
+		$("#colorText").html(output);
+		$("#hoverText").html(output);
+
+	}
+
+//call the function
+	$("#originalText").on("keyup", function() {
+		printText()
+	})
 
 });
-
-
-//https://learn.jquery.com/using-jquery-core/iterating/
-//https://api.jquery.com/each/
-
-	// $(sentence).each(function(i))
-
-
-
-
-// Problem: not separate divs, so probably can't actually have different classes
-
-	// $("#text").empty()
-		// .append(eachLetter[0])
-		// .append(eachLetter[1])
-		// .append(eachLetter[2])
-		// .append(eachLetter[3])
-		// .append(eachLetter[4])
-		// .append(eachLetter[5])
-		// .append(eachLetter[6])
-		// .append(eachLetter[7])
-		// .append(eachLetter[8])
-		// .append(eachLetter[9])
-		// .append(eachLetter[10]);
-
-		// .append(eachLetter[letterNumber])
-		// .append(eachLetter[letterNumber+1]);
-
-	// $(eachLetter).each(addClass(eachLetter[letterNumber]))
-	
-	// $("p").addClass(function(n){
- //    	return "par_" + n;
-
-    // $("eachLetter").addClass(function(letterNumber){
-    // 	return letterNumber +1;
-    // });
