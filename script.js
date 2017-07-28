@@ -30,18 +30,23 @@ $(document).ready(function() {
 	function swoosh(){
 		console.log("swooshing")
 		window.swooshLoop = setInterval(function(){
+				console.log(0)
 			var swooshing = $(".swoosh")
 			if (swooshing.length == 0) {
+				console.log(1)
 				$("#hoverText").find("span").first().addClass("swoosh")
 			}
 			else {
+				console.log(2)
 				$(".swoosh").removeClass("swoosh")
 
 				var nextSwoosh = $(swooshing).next()
 				if (nextSwoosh.length !== 0) {
+					console.log(3)
 					$(nextSwoosh).addClass("swoosh")
 				}
 				else {
+					console.log(4)
 					clearInterval(window.swooshLoop)
 				}
 			}
